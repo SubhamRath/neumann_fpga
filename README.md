@@ -3,8 +3,6 @@ Project Neumann is a RISC-V based microcontroller system using the [PULPino] cor
 
 # FPGA developement for functionality test
 
-# SAR ADC
-Successive Approximation Register (SAR) ADCs are great for low-power SoCs.
 # Resources
 - [PULP]: Joint effort between ETH Zurich and U. of Bologna for effcient architectures for Ultra Low Power application.
 - [PULPino]: Single-core microcontroller system using [RISCY] or zero-riscy. 
