@@ -1,4 +1,4 @@
-// Copyright 2017 ETH Zurich and University of Bologna.
+// Copyright 2014-2018 ETH Zurich and University of Bologna.
 // Copyright and related rights are licensed under the Solderpad Hardware
 // License, Version 0.51 (the “License”); you may not use this file except in
 // compliance with the License.  You may obtain a copy of the License at
@@ -8,19 +8,14 @@
 // CONDITIONS OF ANY KIND, either express or implied. See the License for the
 // specific language governing permissions and limitations under the License.
 
-
-`include "axi_bus.sv"
-
-module axi_node_intf_wrap
-  #(
+module axi_node_intf_wrap #(
     parameter NB_MASTER      = 4,
     parameter NB_SLAVE       = 4,
     parameter AXI_ADDR_WIDTH = 32,
     parameter AXI_DATA_WIDTH = 32,
     parameter AXI_ID_WIDTH   = 10,
     parameter AXI_USER_WIDTH = 0
-    )
-  (
+  )(
     // Clock and Reset
     input logic clk,
     input logic rst_n,
